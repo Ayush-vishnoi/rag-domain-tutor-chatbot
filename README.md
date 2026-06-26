@@ -3,7 +3,7 @@
 A Retrieval-Augmented Generation (RAG) chatbot grounded on an NLP course syllabus and textbook corpus, with a hallucination detection evaluation pipeline.
 
 ## 🚀 Live Demo
-> Deploy on Streamlit Cloud — [share.streamlit.io]([https://share.streamlit.io](https://rag-domain-tutor-chatbot-aitmpmkqisdtv9gvavpmc7.streamlit.app))
+> Deploy on Streamlit Cloud — [share.streamlit.io](https://rag-domain-tutor-chatbot-aitmpmkqisdtv9gvavpmc7.streamlit.app))
 
 ---
 
