@@ -11,10 +11,9 @@ from langchain_groq import ChatGroq
 
 TUTOR_PROMPT = PromptTemplate(
     input_variables=["context", "question"],
-    template="""You are an expert NLP course tutor. Answer ONLY using the provided course materials below.
-If the answer is not in the materials, say: This topic is not covered in the current course materials.
-
-Be pedagogical: explain concepts clearly and reference specific modules or chapters.
+    template="""You are an expert NLP course tutor. Use the course materials below as your primary source to answer the student's question.
+Be pedagogical: explain concepts clearly, give examples, and reference specific modules or chapters when relevant.
+If the topic is genuinely not covered at all in the materials, say so briefly — but always try to help using what is available.
 
 Course Materials:
 ---------------
@@ -47,7 +46,7 @@ def build_chain(vectorstore, groq_api_key: str):
         search_type="mmr",
         search_kwargs={"k": 4, "fetch_k": 10}
     )
-    llm = ChatGroq(model="llama-3.1-8b-instant", temperature=0, api_key=groq_api_key)
+    llm = ChatGroq(model="llama-3.3-70b-versatile", temperature=0.2, api_key=groq_api_key)
 
     def format_docs(docs):
         return "\n\n".join(d.page_content for d in docs)
