@@ -56,9 +56,14 @@ The `syllabus_docs/` folder contains the domain knowledge. Documents were create
 
 | File | Content | Reference |
 |------|---------|-----------|
-| `nlp_course_syllabus.md` | NLP course structure, 8 modules, assignments, grading | Standard NLP university course curriculum |
-| `chapter5_transformers.md` | Attention mechanism, Transformer architecture, BERT, GPT | Vaswani et al. (2017) "Attention is All You Need", Devlin et al. (2018) "BERT" |
-| `chapter7_rag.md` | RAG pipeline, hallucination types, RAGAS metrics, vector databases | Lewis et al. (2020) "RAG for NLP", RAGAS framework |
+| `nlp_course_syllabus.md` | CS 5340 course structure — 8 modules, assignments, grading policy | Standard university NLP curriculum |
+| `chapter1_foundations.md` | Tokenization, stemming, BoW, TF-IDF, N-gram LM, BLEU, ROUGE | Jurafsky & Martin — "Speech and Language Processing" |
+| `chapter2_classical_nlp.md` | HMM, POS tagging, NER (BIO scheme), CRF, Naive Bayes, parsing | Manning & Schütze — "Foundations of Statistical NLP" |
+| `chapter3_embeddings.md` | Word2Vec (Skip-gram/CBOW), GloVe, FastText, static vs contextual | Mikolov et al. (2013), Pennington et al. (2014) |
+| `chapter4_sequence_models.md` | RNN, vanishing gradients, LSTM, GRU, Bidirectional RNN, Seq2Seq + Attention | Hochreiter & Schmidhuber (1997), Bahdanau et al. (2015) |
+| `chapter5_transformers.md` | Attention mechanism, Transformer architecture, BERT, GPT family | Vaswani et al. (2017) "Attention is All You Need", Devlin et al. (2018) |
+| `chapter6_llms.md` | Scaling laws, emergent abilities, RLHF, prompt engineering, hallucination | Kaplan et al. (2020), Ouyang et al. (2022) InstructGPT |
+| `chapter7_rag.md` | RAG pipeline, hallucination types, RAGAS metrics, vector databases | Lewis et al. (2020), RAGAS framework |
 
 > **To add your own documents:** Add `.md` files to `syllabus_docs/` — the pipeline will automatically load, chunk, and embed them on next run.
 
