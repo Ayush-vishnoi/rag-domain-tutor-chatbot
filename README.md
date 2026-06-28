@@ -86,7 +86,7 @@ The `syllabus_docs/` folder contains the domain knowledge. Documents were create
 
 ### 1. Clone the repo
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/Ayush-vishnoi/rag-domain-tutor-chatbot
 cd tutor_app
 ```
 
@@ -123,19 +123,6 @@ GROQ_API_KEY=gsk_your_key_here
 ```
 
 Then open the notebook and select `tutor_rag` kernel.
-
----
-
-## ☁️ Deploy on Streamlit Cloud
-
-1. Push `tutor_app/` to GitHub
-2. Go to [share.streamlit.io](https://share.streamlit.io) → New App
-3. Select your repo, set main file as `app.py`
-4. Go to **Settings → Secrets** and add:
-```toml
-GROQ_API_KEY = "gsk_your_key_here"
-```
-5. Deploy — public URL mil jaayegi!
 
 ---
 
